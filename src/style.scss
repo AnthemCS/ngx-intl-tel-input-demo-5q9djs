@@ -251,6 +251,7 @@ $mobilePopupMargin: 30px !default;
   }
 }
 
+$countryListWidth: 250px;
 // overrides for mobile popup (note: .iti-mobile class is applied on body)
 .iti-mobile .iti {
   &--container {
@@ -262,7 +263,7 @@ $mobilePopupMargin: 30px !default;
   }
   &__country-list {
     max-height: 100%;
-    width: 100%;
+    width: $countryListWidth;
   }
   &__country {
     padding: 10px 10px;
@@ -271,12 +272,15 @@ $mobilePopupMargin: 30px !default;
   }
 }
 
+.intl-tel-input .country-list {
+  width: $countryListWidth;
+}
 
 
 
 
 
-@import "sprite";
+// @import "sprite";
 
 .iti__flag {
   height: $flagHeight;
